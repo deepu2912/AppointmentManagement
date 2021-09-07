@@ -1,0 +1,25 @@
+
+Log Entry : 12.34.16 PM 27 May 2021
+  :
+  :Unable to cast object of type 'System.Int32' to type 'System.String'.
+-------------------------------
+
+Log Entry : 12.35.36 PM 27 May 2021
+  :
+  :Unable to cast object of type 'System.Int32' to type 'System.String'.
+-------------------------------
+
+Log Entry : 12.45.46 PM 27 May 2021
+  :
+  :AdminMaster :== Thread was being aborted.
+-------------------------------
+
+Log Entry : 2.35.35 PM 27 May 2021
+  :
+  :AdminMaster :== Object reference not set to an instance of an object.
+-------------------------------
+
+Log Entry : 2.36.23 PM 27 May 2021
+  :
+  :AdminMaster :== Object reference not set to an instance of an object.
+-------------------------------

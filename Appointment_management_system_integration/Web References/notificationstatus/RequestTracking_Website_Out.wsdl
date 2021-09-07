@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:p2="urn:NDPL.com:ISU:CS:NewConnectionRequest" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:p1="urn:NDPL.com:ISU:CS:RequestTracking" name="RequestTracking_Website_Out" targetNamespace="urn:NDPL.com:ISU:CS:RequestTracking" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation />
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="OP_RequestTracking_Website_Out" />
+  <wsdl:types>
+    <xsd:schema xmlns="urn:NDPL.com:ISU:CS:RequestTracking" targetNamespace="urn:NDPL.com:ISU:CS:RequestTracking" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="RequestTrackingRes" type="p1:RequestTrackingRes" />
+      <xsd:element name="RequestTrackingReq" type="p1:RequestTrackingReq" />
+      <xsd:complexType name="ExchangeLogData">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">64ce30fe4b0d11e0c205000000178f0e</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="severity" type="xsd:string" />
+          <xsd:element name="text" type="xsd:string" />
+          <xsd:element minOccurs="0" name="url" type="xsd:string" />
+          <xsd:element minOccurs="0" name="id" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RequestTrackingRes">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">f862ed5937a811e69ef1000000178f0e</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ContractAccount" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">a04afd2536d911e6cfa5540b8c408412</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="ConsumerName" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">a04afd2636d911e6cd83540b8c408412</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="NotificationType" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">a04afd2736d911e69c42540b8c408412</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Priority" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">a04afd2836d911e6b75e540b8c408412</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Status" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">a04afd2936d911e69e6c540b8c408412</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Reason" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">a04afd2a36d911e691c3540b8c408412</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Message" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">a04afd2b36d911e6c198540b8c408412</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="SCHEMENO" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">f69f6f7e37a811e6cc79540b8c408412</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="SCHEMEDESC" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">f69f6f7f37a811e6a9b5540b8c408412</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Notificationno" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RequestTrackingReq">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">7334c61236d911e6cd54000000178f0e</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="NotificationNo" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">70577e4c36d911e6a0ed540b8c408412</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="SCHEMENO" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ExchangeFaultData">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">649217874b0d11e0ba67000000178f0e</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="faultText" type="xsd:string" />
+          <xsd:element minOccurs="0" name="faultUrl" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="faultDetail" type="p1:ExchangeLogData" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="urn:NDPL.com:ISU:CS:NewConnectionRequest" targetNamespace="urn:NDPL.com:ISU:CS:NewConnectionRequest" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="urn:NDPL.com:ISU:CS:RequestTracking" />
+      <xsd:element name="RequestTrackingFault">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="standard" type="p1:ExchangeFaultData" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="RequestTrackingReq">
+    <wsdl:documentation />
+    <wsdl:part name="RequestTrackingReq" element="p1:RequestTrackingReq" />
+  </wsdl:message>
+  <wsdl:message name="RequestTrackingRes">
+    <wsdl:documentation />
+    <wsdl:part name="RequestTrackingRes" element="p1:RequestTrackingRes" />
+  </wsdl:message>
+  <wsdl:message name="RequestTrackingFault">
+    <wsdl:documentation />
+    <wsdl:part name="RequestTrackingFault" element="p2:RequestTrackingFault" />
+  </wsdl:message>
+  <wsdl:portType name="RequestTracking_Website_Out">
+    <wsdl:documentation />
+    <wsdl:operation name="RequestTracking_Website_Out">
+      <wsdl:documentation />
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_RequestTracking_Website_Out" />
+      </wsp:Policy>
+      <wsdl:input message="p1:RequestTrackingReq" />
+      <wsdl:output message="p1:RequestTrackingRes" />
+      <wsdl:fault name="RequestTrackingFault" message="p1:RequestTrackingFault" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RequestTracking_Website_OutBinding" type="p1:RequestTracking_Website_Out">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <wsdl:operation name="RequestTracking_Website_Out">
+      <operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <wsdl:input>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:input>
+      <wsdl:output>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:output>
+      <wsdl:fault name="RequestTrackingFault">
+        <fault use="literal" name="RequestTrackingFault" namespace="" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RequestTracking_Website_OutService">
+    <wsdl:port name="HTTP_Port" binding="p1:RequestTracking_Website_OutBinding">
+      <address location="http://piprd:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=Sys_Website_P&amp;receiverParty=&amp;receiverService=&amp;interface=RequestTracking_Website_Out&amp;interfaceNamespace=urn%3ANDPL.com%3AISU%3ACS%3ARequestTracking" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+    <wsdl:port name="HTTPS_Port" binding="p1:RequestTracking_Website_OutBinding">
+      <address location="https://piprd:50005/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=Sys_Website_P&amp;receiverParty=&amp;receiverService=&amp;interface=RequestTracking_Website_Out&amp;interfaceNamespace=urn%3ANDPL.com%3AISU%3ACS%3ARequestTracking" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

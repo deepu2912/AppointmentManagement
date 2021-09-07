@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://piprd:50000/dir/wsdl?p=1_578efe90da7a3ba593a9d6fc3f3dde34_portTypeBindingService" filename="RequestTracking_Website_Out.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

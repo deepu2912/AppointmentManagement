@@ -1,0 +1,213 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Appointment_management_system_integration.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="<%= Page.ResolveUrl("~/media/plugins/fontawesome-free/css/all.min.css") %>">
+    <link rel="stylesheet" href="<%= Page.ResolveUrl("~/media/dist/css/adminlte.min.css") %>">
+    <link rel="stylesheet" href="<%= Page.ResolveUrl("~/media/plugins/overlayScrollbars/css/OverlayScrollbars.min.css") %>">
+    <link href="<%= Page.ResolveUrl("~/media/Css/custom.css") %>" rel="stylesheet" />
+    <link rel="stylesheet" href="<%= Page.ResolveUrl("~/media/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css") %>">
+    <link rel="stylesheet" href="<%= Page.ResolveUrl("~/media/Css/ui.multidatepicker.css") %>">
+ <%--   <link rel="stylesheet" href="<%= Page.ResolveUrl("~/media/Css/ui.multidatepicker.css") %>">--%>
+    <link rel="stylesheet" href="<%= Page.ResolveUrl("~/media/Css/datepicker.jquery.ui.css") %>">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand navbar-dark navbar-primary">
+                <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                    </li>
+                    <%--      <li class="nav-item d-none d-sm-inline-block">
+                        <a href="index3.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item d-none d-sm-inline-block">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>--%>
+                </ul>
+                <!-- Right navbar links -->
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
+
+                            <img src='<%= Page.ResolveUrl("~/media/Images/User-Image.png") %>' style="width: 30px;" />
+                            <span id="userName" runat="server"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" style="left: inherit; right: 0px;">
+                            <a href="Javascript:void(0)" class="dropdown-item" id="LogoutClick">Logout 
+                            </a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+            <!-- /.navbar -->
+            <!-- Main Sidebar Container -->
+            <aside class="main-sidebar elevation-4 sidebar-dark-teal">
+                <!-- Brand Logo -->
+                <a href="#" class="brand-link navbar-light text-center">
+                    <img src="<%= Page.ResolveUrl("~/media/Images/logo.png") %>" alt="Tata Power - DDL" class="brand-image">
+                    <span class="brand-text font-weight-bold" id="departmentName" runat="server"></span>
+                </a>
+
+                <!-- Sidebar -->
+                <div class="sidebar os-host os-theme-light os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-transition">
+                    <div class="os-resize-observer-host observed">
+                        <div class="os-resize-observer" style="left: 0px; right: auto;">
+                        </div>
+                    </div>
+                    <div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;">
+                        <div class="os-resize-observer">
+                        </div>
+                    </div>
+                    <div class="os-content-glue" style="margin: 0px -8px; width: 249px; height: 567px;">
+                    </div>
+                    <div class="os-padding">
+                        <div class="os-viewport os-viewport-native-scrollbars-invisible" style="overflow-y: scroll;">
+                            <div class="os-content" style="padding: 0px 8px; height: 100%; width: 100%;">
+
+                                <div class="form-inline mt-3">
+                                    <div class="input-group" data-widget="sidebar-search">
+                                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-sidebar">
+                                                <i class="fas fa-search fa-fw"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-search-results">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item">
+                                                <div class="search-title">
+                                                    <b class="text-light"></b>N<b class="text-light"></b>o<b class="text-light"></b> <b class="text-light"></b>e<b class="text-light"></b>l<b class="text-light"></b>e<b class="text-light"></b>m<b class="text-light"></b>e<b class="text-light"></b>n<b class="text-light"></b>t<b class="text-light"></b> <b class="text-light"></b>f<b class="text-light"></b>o<b class="text-light"></b>u<b class="text-light"></b>n<b class="text-light"></b>d<b class="text-light"></b>!<b class="text-light"></b>
+                                                </div>
+                                                <div class="search-path">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sidebar Menu -->
+                                <nav class="mt-2">
+                                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" id="NavigationData" runat="server">
+                                        <li class="nav-item">
+                                            <a href="departments.aspx" class="nav-link">
+                                                <i class="nav-icon fas fa-th"></i>
+                                                <p>Department List </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- /.sidebar-menu -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden">
+                        <div class="os-scrollbar-track">
+                            <div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div>
+                        </div>
+                    </div>
+                    <div class="os-scrollbar os-scrollbar-vertical os-scrollbar-auto-hidden">
+                        <div class="os-scrollbar-track">
+                            <div class="os-scrollbar-handle" style="height: 40.7168%; transform: translate(0px, 0px);"></div>
+                        </div>
+                    </div>
+                    <div class="os-scrollbar-corner"></div>
+                </div>
+                <!-- /.sidebar -->
+            </aside>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <%--Loader Gif--%>
+
+            <div class="loading" style="display: none;">Loading&#8230;</div>
+
+            <%--Loader Gif--%>
+            <footer class="main-footer">
+                <strong>Copyright &copy; 2020-2021 <a href="https://tatapower-ddl.com">Tata Power Delhi Distribution Limited</a>.</strong>
+                All rights reserved.
+           
+                <div class="float-right d-none d-sm-inline-block">
+                    <b>Version</b> 1.0.0  
+                </div>
+            </footer>
+        </div>
+
+    </form>
+
+    <script src='<%= Page.ResolveUrl("~/media/plugins/jquery/jquery.min.js") %>'></script>
+    <script src=" <%= Page.ResolveUrl("~/media/plugins/bootstrap/js/bootstrap.bundle.min.js") %>"></script>
+    <script src='<%= Page.ResolveUrl("~/media/dist/js/adminlte.js") %>'></script>
+    <script src='<%= Page.ResolveUrl("~/media/dist/js/demo.js") %>'></script>
+    <script src='<%= Page.ResolveUrl("~/media/plugins/toastr/toastr.min.js") %>'></script>
+    <script src='<%= Page.ResolveUrl("~/media/plugins/sweetalert2/sweetalert2.js") %>'></script>
+    <script src='<%= Page.ResolveUrl("~/media/Jquery/Common.js") %>'></script>
+    <script src='<%= Page.ResolveUrl("~/media/dist/js/moment.min.js") %>'></script>
+    <script src='<%= Page.ResolveUrl("~/media/Jquery/multipleDatePicker.js") %>'></script>
+    <script src='<%= Page.ResolveUrl("~/media/Jquery/Datepicker.jquery.ui.js") %>'></script>
+
+    <script>
+        $('#LogoutClick').click(function (e) {
+            var EmpID = '1';
+            $.ajax({
+                type: "POST",
+                url: "<%= Page.ResolveUrl("~/Home.aspx/Logout") %>",
+                contentType: "application/json; charset=utf-8",
+                data: '{"EmpID":"' + EmpID + '"}',
+                dataType: "json",
+                beforeSend: function () {
+                    $(".loading").show();
+                },
+                success: function (msg) {
+                    if (msg.d == "logout") {
+                        location.reload();
+                    }
+                },
+                complete: function () {
+                    $(".loading").hide();
+                },
+                error: function (req, status, error) {
+                    ErrorAlert("Error try again");
+                }
+            });
+
+        })
+
+        $(document).ready(function (e) {
+            debugger;
+            var pathname = window.location.pathname;
+            $('.nav-link').each(function (e) {
+                if ($(this).attr('href').search(pathname) != -1) {
+                    $(this).addClass('active')
+                }
+            })
+
+        })
+
+    </script>
+    <asp:ContentPlaceHolder ID="Scripts" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

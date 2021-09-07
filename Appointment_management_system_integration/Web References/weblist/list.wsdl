@@ -1,0 +1,2919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="NDPL WebService" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="NDPL WebService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="NDPL WebService">
+      <s:element name="GetClientIPAddress">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetClientIPAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientIPAddressResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDisplayNamefromActiveDirectory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDisplayNamefromActiveDirectoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDisplayNamefromActiveDirectoryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuthenticationfromActiveDirectory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuthenticationfromActiveDirectoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAuthenticationfromActiveDirectoryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuthenticationfromActiveDirectory_test">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuthenticationfromActiveDirectory_testResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAuthenticationfromActiveDirectory_testResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEncryptedString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="decstr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEncryptedStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEncryptedStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDecryptedString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="encstr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDecryptedStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDecryptedStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="to_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="from_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cc_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bcc_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendEmailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailswithAttachment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="to_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="from_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cc_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bcc_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="attachement" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailswithAttachmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendEmailswithAttachmentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailswithMultipleAttachment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="to_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="from_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cc_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bcc_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="attachementsPathHashSeparated" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailswithMultipleAttachmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendEmailswithMultipleAttachmentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkholiday">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="str" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkholidayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="checkholidayResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="add_working_days">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="str" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="day" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="add_working_daysResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="add_working_daysResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GET_Mail_DEPT_DESG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="displayname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GET_Mail_DEPT_DESGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GET_Mail_DEPT_DESGResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getEmpidNameDeptDesg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getEmpidNameDeptDesgResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getEmpidNameDeptDesgResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getEmpid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getEmpidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getEmpidResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUsername_onEmpID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUsername_onEmpIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUsername_onEmpIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CompanyName">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_CompanyNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_CompanyNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CompanyShortName">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_CompanyShortNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_CompanyShortNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Domain">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_DomainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_DomainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Company_Logo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pathtype" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Company_LogoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Company_LogoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Company_Pic">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pathtype" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Company_PicResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Company_PicResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Datatable2HTMLtable_new">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="constr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="querystr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Datatable2HTMLtable_newResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Datatable2HTMLtable_newResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Encryption64">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Encryption64Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Encryption64Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Decryption64">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Decryption64Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Decryption64Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_FinancialYear">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_FinancialYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_FinancialYearResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Email">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_EmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_EmailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Username">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="emailid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_UsernameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_UsernameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Server_date">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_Server_dateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Server_dateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AD_GetReportingManager">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisplayName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AD_GetReportingManagerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AD_GetReportingManagerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Display_Email_Mobile_AD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Display_Email_Mobile_ADResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Display_Email_Mobile_ADResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailswithAttachment_Priority">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="to_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="from_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cc_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bcc_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="attachement" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="priority" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailswithAttachment_PriorityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendEmailswithAttachment_PriorityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmails_Priority">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="to_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="from_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cc_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bcc_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="priority" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmails_PriorityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendEmails_PriorityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckHolidayonDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datetocheck" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckHolidayonDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckHolidayonDateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendTrainingRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequiredAttendees" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OptionalAttendees" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="meeting_start_time" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="meeting_end_time" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="meeting_location" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendTrainingRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendTrainingRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMeetingRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequiredAttendees" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OptionalAttendees" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="meeting_start_time" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="meeting_end_time" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="meeting_location" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMeetingRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendMeetingRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckDisplayName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="displayname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckDisplayNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckDisplayNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmails_Testing_Infra">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="to_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="from_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body_str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cc_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bcc_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmails_Testing_InfraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendEmails_Testing_InfraResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_Application_Hits">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Application_Name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP_Address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HitBy_User_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sub_Type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_Application_HitsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Update_Application_HitsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getHOGdetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getHOGdetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getHOGdetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AD_ReportingMGRDetails_UserID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AD_ReportingMGRDetails_UserIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AD_ReportingMGRDetails_UserIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="boolean" type="s:boolean" />
+      <s:element name="dateTime" type="s:dateTime" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetClientIPAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClientIPAddress" />
+  </wsdl:message>
+  <wsdl:message name="GetClientIPAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientIPAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplayNamefromActiveDirectorySoapIn">
+    <wsdl:part name="parameters" element="tns:GetDisplayNamefromActiveDirectory" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplayNamefromActiveDirectorySoapOut">
+    <wsdl:part name="parameters" element="tns:GetDisplayNamefromActiveDirectoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationfromActiveDirectorySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuthenticationfromActiveDirectory" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationfromActiveDirectorySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuthenticationfromActiveDirectoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationfromActiveDirectory_testSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuthenticationfromActiveDirectory_test" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationfromActiveDirectory_testSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuthenticationfromActiveDirectory_testResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEncryptedStringSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEncryptedString" />
+  </wsdl:message>
+  <wsdl:message name="GetEncryptedStringSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEncryptedStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDecryptedStringSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDecryptedString" />
+  </wsdl:message>
+  <wsdl:message name="GetDecryptedStringSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDecryptedStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailsSoapIn">
+    <wsdl:part name="parameters" element="tns:SendEmails" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailsSoapOut">
+    <wsdl:part name="parameters" element="tns:SendEmailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithAttachmentSoapIn">
+    <wsdl:part name="parameters" element="tns:SendEmailswithAttachment" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithAttachmentSoapOut">
+    <wsdl:part name="parameters" element="tns:SendEmailswithAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithMultipleAttachmentSoapIn">
+    <wsdl:part name="parameters" element="tns:SendEmailswithMultipleAttachment" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithMultipleAttachmentSoapOut">
+    <wsdl:part name="parameters" element="tns:SendEmailswithMultipleAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkholidaySoapIn">
+    <wsdl:part name="parameters" element="tns:checkholiday" />
+  </wsdl:message>
+  <wsdl:message name="checkholidaySoapOut">
+    <wsdl:part name="parameters" element="tns:checkholidayResponse" />
+  </wsdl:message>
+  <wsdl:message name="add_working_daysSoapIn">
+    <wsdl:part name="parameters" element="tns:add_working_days" />
+  </wsdl:message>
+  <wsdl:message name="add_working_daysSoapOut">
+    <wsdl:part name="parameters" element="tns:add_working_daysResponse" />
+  </wsdl:message>
+  <wsdl:message name="GET_Mail_DEPT_DESGSoapIn">
+    <wsdl:part name="parameters" element="tns:GET_Mail_DEPT_DESG" />
+  </wsdl:message>
+  <wsdl:message name="GET_Mail_DEPT_DESGSoapOut">
+    <wsdl:part name="parameters" element="tns:GET_Mail_DEPT_DESGResponse" />
+  </wsdl:message>
+  <wsdl:message name="getEmpidNameDeptDesgSoapIn">
+    <wsdl:part name="parameters" element="tns:getEmpidNameDeptDesg" />
+  </wsdl:message>
+  <wsdl:message name="getEmpidNameDeptDesgSoapOut">
+    <wsdl:part name="parameters" element="tns:getEmpidNameDeptDesgResponse" />
+  </wsdl:message>
+  <wsdl:message name="getEmpidSoapIn">
+    <wsdl:part name="parameters" element="tns:getEmpid" />
+  </wsdl:message>
+  <wsdl:message name="getEmpidSoapOut">
+    <wsdl:part name="parameters" element="tns:getEmpidResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUsername_onEmpIDSoapIn">
+    <wsdl:part name="parameters" element="tns:getUsername_onEmpID" />
+  </wsdl:message>
+  <wsdl:message name="getUsername_onEmpIDSoapOut">
+    <wsdl:part name="parameters" element="tns:getUsername_onEmpIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_CompanyNameSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_CompanyName" />
+  </wsdl:message>
+  <wsdl:message name="Get_CompanyNameSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_CompanyNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_CompanyShortNameSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_CompanyShortName" />
+  </wsdl:message>
+  <wsdl:message name="Get_CompanyShortNameSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_CompanyShortNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_DomainSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Domain" />
+  </wsdl:message>
+  <wsdl:message name="Get_DomainSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_DomainResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Company_LogoSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Company_Logo" />
+  </wsdl:message>
+  <wsdl:message name="Get_Company_LogoSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Company_LogoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Company_PicSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Company_Pic" />
+  </wsdl:message>
+  <wsdl:message name="Get_Company_PicSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Company_PicResponse" />
+  </wsdl:message>
+  <wsdl:message name="Datatable2HTMLtable_newSoapIn">
+    <wsdl:part name="parameters" element="tns:Datatable2HTMLtable_new" />
+  </wsdl:message>
+  <wsdl:message name="Datatable2HTMLtable_newSoapOut">
+    <wsdl:part name="parameters" element="tns:Datatable2HTMLtable_newResponse" />
+  </wsdl:message>
+  <wsdl:message name="Encryption64SoapIn">
+    <wsdl:part name="parameters" element="tns:Encryption64" />
+  </wsdl:message>
+  <wsdl:message name="Encryption64SoapOut">
+    <wsdl:part name="parameters" element="tns:Encryption64Response" />
+  </wsdl:message>
+  <wsdl:message name="Decryption64SoapIn">
+    <wsdl:part name="parameters" element="tns:Decryption64" />
+  </wsdl:message>
+  <wsdl:message name="Decryption64SoapOut">
+    <wsdl:part name="parameters" element="tns:Decryption64Response" />
+  </wsdl:message>
+  <wsdl:message name="Get_FinancialYearSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_FinancialYear" />
+  </wsdl:message>
+  <wsdl:message name="Get_FinancialYearSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_FinancialYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_EmailSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Email" />
+  </wsdl:message>
+  <wsdl:message name="Get_EmailSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_EmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_UsernameSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Username" />
+  </wsdl:message>
+  <wsdl:message name="Get_UsernameSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_UsernameResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Server_dateSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Server_date" />
+  </wsdl:message>
+  <wsdl:message name="Get_Server_dateSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Server_dateResponse" />
+  </wsdl:message>
+  <wsdl:message name="AD_GetReportingManagerSoapIn">
+    <wsdl:part name="parameters" element="tns:AD_GetReportingManager" />
+  </wsdl:message>
+  <wsdl:message name="AD_GetReportingManagerSoapOut">
+    <wsdl:part name="parameters" element="tns:AD_GetReportingManagerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Display_Email_Mobile_ADSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Display_Email_Mobile_AD" />
+  </wsdl:message>
+  <wsdl:message name="Get_Display_Email_Mobile_ADSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Display_Email_Mobile_ADResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithAttachment_PrioritySoapIn">
+    <wsdl:part name="parameters" element="tns:SendEmailswithAttachment_Priority" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithAttachment_PrioritySoapOut">
+    <wsdl:part name="parameters" element="tns:SendEmailswithAttachment_PriorityResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendEmails_PrioritySoapIn">
+    <wsdl:part name="parameters" element="tns:SendEmails_Priority" />
+  </wsdl:message>
+  <wsdl:message name="SendEmails_PrioritySoapOut">
+    <wsdl:part name="parameters" element="tns:SendEmails_PriorityResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckHolidayonDateSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckHolidayonDate" />
+  </wsdl:message>
+  <wsdl:message name="CheckHolidayonDateSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckHolidayonDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendTrainingRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:SendTrainingRequest" />
+  </wsdl:message>
+  <wsdl:message name="SendTrainingRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:SendTrainingRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMeetingRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMeetingRequest" />
+  </wsdl:message>
+  <wsdl:message name="SendMeetingRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMeetingRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckDisplayNameSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckDisplayName" />
+  </wsdl:message>
+  <wsdl:message name="CheckDisplayNameSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckDisplayNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendEmails_Testing_InfraSoapIn">
+    <wsdl:part name="parameters" element="tns:SendEmails_Testing_Infra" />
+  </wsdl:message>
+  <wsdl:message name="SendEmails_Testing_InfraSoapOut">
+    <wsdl:part name="parameters" element="tns:SendEmails_Testing_InfraResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update_Application_HitsSoapIn">
+    <wsdl:part name="parameters" element="tns:Update_Application_Hits" />
+  </wsdl:message>
+  <wsdl:message name="Update_Application_HitsSoapOut">
+    <wsdl:part name="parameters" element="tns:Update_Application_HitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getHOGdetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:getHOGdetails" />
+  </wsdl:message>
+  <wsdl:message name="getHOGdetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:getHOGdetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AD_ReportingMGRDetails_UserIDSoapIn">
+    <wsdl:part name="parameters" element="tns:AD_ReportingMGRDetails_UserID" />
+  </wsdl:message>
+  <wsdl:message name="AD_ReportingMGRDetails_UserIDSoapOut">
+    <wsdl:part name="parameters" element="tns:AD_ReportingMGRDetails_UserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientIPAddressHttpGetIn" />
+  <wsdl:message name="GetClientIPAddressHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplayNamefromActiveDirectoryHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplayNamefromActiveDirectoryHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationfromActiveDirectoryHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationfromActiveDirectoryHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationfromActiveDirectory_testHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationfromActiveDirectory_testHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetEncryptedStringHttpGetIn">
+    <wsdl:part name="decstr" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEncryptedStringHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDecryptedStringHttpGetIn">
+    <wsdl:part name="encstr" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDecryptedStringHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailsHttpGetIn">
+    <wsdl:part name="to_id" type="s:string" />
+    <wsdl:part name="from_id" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="cc_id" type="s:string" />
+    <wsdl:part name="bcc_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithAttachmentHttpGetIn">
+    <wsdl:part name="to_id" type="s:string" />
+    <wsdl:part name="from_id" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="cc_id" type="s:string" />
+    <wsdl:part name="bcc_id" type="s:string" />
+    <wsdl:part name="attachement" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithAttachmentHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithMultipleAttachmentHttpGetIn">
+    <wsdl:part name="to_id" type="s:string" />
+    <wsdl:part name="from_id" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="cc_id" type="s:string" />
+    <wsdl:part name="bcc_id" type="s:string" />
+    <wsdl:part name="attachementsPathHashSeparated" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithMultipleAttachmentHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="checkholidayHttpGetIn">
+    <wsdl:part name="str" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="checkholidayHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="add_working_daysHttpGetIn">
+    <wsdl:part name="str" type="s:string" />
+    <wsdl:part name="day" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="add_working_daysHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="GET_Mail_DEPT_DESGHttpGetIn">
+    <wsdl:part name="displayname" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GET_Mail_DEPT_DESGHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getEmpidNameDeptDesgHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getEmpidNameDeptDesgHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getEmpidHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getEmpidHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getUsername_onEmpIDHttpGetIn">
+    <wsdl:part name="empid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getUsername_onEmpIDHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_CompanyNameHttpGetIn" />
+  <wsdl:message name="Get_CompanyNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_CompanyShortNameHttpGetIn" />
+  <wsdl:message name="Get_CompanyShortNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_DomainHttpGetIn" />
+  <wsdl:message name="Get_DomainHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Company_LogoHttpGetIn">
+    <wsdl:part name="pathtype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Company_LogoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Company_PicHttpGetIn">
+    <wsdl:part name="pathtype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Company_PicHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Datatable2HTMLtable_newHttpGetIn">
+    <wsdl:part name="constr" type="s:string" />
+    <wsdl:part name="querystr" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Datatable2HTMLtable_newHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Encryption64HttpGetIn">
+    <wsdl:part name="str" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Encryption64HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Decryption64HttpGetIn">
+    <wsdl:part name="str" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Decryption64HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_FinancialYearHttpGetIn" />
+  <wsdl:message name="Get_FinancialYearHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_EmailHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_EmailHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_UsernameHttpGetIn">
+    <wsdl:part name="emailid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_UsernameHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Server_dateHttpGetIn" />
+  <wsdl:message name="Get_Server_dateHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AD_GetReportingManagerHttpGetIn">
+    <wsdl:part name="DisplayName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AD_GetReportingManagerHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Display_Email_Mobile_ADHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Display_Email_Mobile_ADHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithAttachment_PriorityHttpGetIn">
+    <wsdl:part name="to_id" type="s:string" />
+    <wsdl:part name="from_id" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="cc_id" type="s:string" />
+    <wsdl:part name="bcc_id" type="s:string" />
+    <wsdl:part name="attachement" type="s:string" />
+    <wsdl:part name="priority" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithAttachment_PriorityHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmails_PriorityHttpGetIn">
+    <wsdl:part name="to_id" type="s:string" />
+    <wsdl:part name="from_id" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="cc_id" type="s:string" />
+    <wsdl:part name="bcc_id" type="s:string" />
+    <wsdl:part name="priority" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmails_PriorityHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckHolidayonDateHttpGetIn">
+    <wsdl:part name="datetocheck" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckHolidayonDateHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendTrainingRequestHttpGetIn">
+    <wsdl:part name="RequiredAttendees" type="s:string" />
+    <wsdl:part name="OptionalAttendees" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="meeting_start_time" type="s:string" />
+    <wsdl:part name="meeting_end_time" type="s:string" />
+    <wsdl:part name="meeting_location" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendTrainingRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMeetingRequestHttpGetIn">
+    <wsdl:part name="RequiredAttendees" type="s:string" />
+    <wsdl:part name="OptionalAttendees" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="meeting_start_time" type="s:string" />
+    <wsdl:part name="meeting_end_time" type="s:string" />
+    <wsdl:part name="meeting_location" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMeetingRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckDisplayNameHttpGetIn">
+    <wsdl:part name="displayname" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckDisplayNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmails_Testing_InfraHttpGetIn">
+    <wsdl:part name="to_id" type="s:string" />
+    <wsdl:part name="from_id" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="cc_id" type="s:string" />
+    <wsdl:part name="bcc_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmails_Testing_InfraHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Update_Application_HitsHttpGetIn">
+    <wsdl:part name="Application_Name" type="s:string" />
+    <wsdl:part name="IP_Address" type="s:string" />
+    <wsdl:part name="HitBy_User_ID" type="s:string" />
+    <wsdl:part name="Sub_Type" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Update_Application_HitsHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="getHOGdetailsHttpGetIn">
+    <wsdl:part name="empid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getHOGdetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AD_ReportingMGRDetails_UserIDHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AD_ReportingMGRDetails_UserIDHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientIPAddressHttpPostIn" />
+  <wsdl:message name="GetClientIPAddressHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplayNamefromActiveDirectoryHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplayNamefromActiveDirectoryHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationfromActiveDirectoryHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationfromActiveDirectoryHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationfromActiveDirectory_testHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthenticationfromActiveDirectory_testHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetEncryptedStringHttpPostIn">
+    <wsdl:part name="decstr" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEncryptedStringHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDecryptedStringHttpPostIn">
+    <wsdl:part name="encstr" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDecryptedStringHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailsHttpPostIn">
+    <wsdl:part name="to_id" type="s:string" />
+    <wsdl:part name="from_id" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="cc_id" type="s:string" />
+    <wsdl:part name="bcc_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithAttachmentHttpPostIn">
+    <wsdl:part name="to_id" type="s:string" />
+    <wsdl:part name="from_id" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="cc_id" type="s:string" />
+    <wsdl:part name="bcc_id" type="s:string" />
+    <wsdl:part name="attachement" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithAttachmentHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithMultipleAttachmentHttpPostIn">
+    <wsdl:part name="to_id" type="s:string" />
+    <wsdl:part name="from_id" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="cc_id" type="s:string" />
+    <wsdl:part name="bcc_id" type="s:string" />
+    <wsdl:part name="attachementsPathHashSeparated" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithMultipleAttachmentHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="checkholidayHttpPostIn">
+    <wsdl:part name="str" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="checkholidayHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="add_working_daysHttpPostIn">
+    <wsdl:part name="str" type="s:string" />
+    <wsdl:part name="day" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="add_working_daysHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="GET_Mail_DEPT_DESGHttpPostIn">
+    <wsdl:part name="displayname" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GET_Mail_DEPT_DESGHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getEmpidNameDeptDesgHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getEmpidNameDeptDesgHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getEmpidHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getEmpidHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getUsername_onEmpIDHttpPostIn">
+    <wsdl:part name="empid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getUsername_onEmpIDHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_CompanyNameHttpPostIn" />
+  <wsdl:message name="Get_CompanyNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_CompanyShortNameHttpPostIn" />
+  <wsdl:message name="Get_CompanyShortNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_DomainHttpPostIn" />
+  <wsdl:message name="Get_DomainHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Company_LogoHttpPostIn">
+    <wsdl:part name="pathtype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Company_LogoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Company_PicHttpPostIn">
+    <wsdl:part name="pathtype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Company_PicHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Datatable2HTMLtable_newHttpPostIn">
+    <wsdl:part name="constr" type="s:string" />
+    <wsdl:part name="querystr" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Datatable2HTMLtable_newHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Encryption64HttpPostIn">
+    <wsdl:part name="str" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Encryption64HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Decryption64HttpPostIn">
+    <wsdl:part name="str" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Decryption64HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_FinancialYearHttpPostIn" />
+  <wsdl:message name="Get_FinancialYearHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_EmailHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_EmailHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_UsernameHttpPostIn">
+    <wsdl:part name="emailid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_UsernameHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Server_dateHttpPostIn" />
+  <wsdl:message name="Get_Server_dateHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AD_GetReportingManagerHttpPostIn">
+    <wsdl:part name="DisplayName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AD_GetReportingManagerHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Display_Email_Mobile_ADHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Get_Display_Email_Mobile_ADHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithAttachment_PriorityHttpPostIn">
+    <wsdl:part name="to_id" type="s:string" />
+    <wsdl:part name="from_id" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="cc_id" type="s:string" />
+    <wsdl:part name="bcc_id" type="s:string" />
+    <wsdl:part name="attachement" type="s:string" />
+    <wsdl:part name="priority" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailswithAttachment_PriorityHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmails_PriorityHttpPostIn">
+    <wsdl:part name="to_id" type="s:string" />
+    <wsdl:part name="from_id" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="cc_id" type="s:string" />
+    <wsdl:part name="bcc_id" type="s:string" />
+    <wsdl:part name="priority" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmails_PriorityHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckHolidayonDateHttpPostIn">
+    <wsdl:part name="datetocheck" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckHolidayonDateHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendTrainingRequestHttpPostIn">
+    <wsdl:part name="RequiredAttendees" type="s:string" />
+    <wsdl:part name="OptionalAttendees" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="meeting_start_time" type="s:string" />
+    <wsdl:part name="meeting_end_time" type="s:string" />
+    <wsdl:part name="meeting_location" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendTrainingRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMeetingRequestHttpPostIn">
+    <wsdl:part name="RequiredAttendees" type="s:string" />
+    <wsdl:part name="OptionalAttendees" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="meeting_start_time" type="s:string" />
+    <wsdl:part name="meeting_end_time" type="s:string" />
+    <wsdl:part name="meeting_location" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMeetingRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckDisplayNameHttpPostIn">
+    <wsdl:part name="displayname" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckDisplayNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmails_Testing_InfraHttpPostIn">
+    <wsdl:part name="to_id" type="s:string" />
+    <wsdl:part name="from_id" type="s:string" />
+    <wsdl:part name="subject_str" type="s:string" />
+    <wsdl:part name="body_str" type="s:string" />
+    <wsdl:part name="cc_id" type="s:string" />
+    <wsdl:part name="bcc_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendEmails_Testing_InfraHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Update_Application_HitsHttpPostIn">
+    <wsdl:part name="Application_Name" type="s:string" />
+    <wsdl:part name="IP_Address" type="s:string" />
+    <wsdl:part name="HitBy_User_ID" type="s:string" />
+    <wsdl:part name="Sub_Type" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Update_Application_HitsHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="getHOGdetailsHttpPostIn">
+    <wsdl:part name="empid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getHOGdetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AD_ReportingMGRDetails_UserIDHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AD_ReportingMGRDetails_UserIDHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="listSoap">
+    <wsdl:operation name="GetClientIPAddress">
+      <wsdl:input message="tns:GetClientIPAddressSoapIn" />
+      <wsdl:output message="tns:GetClientIPAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayNamefromActiveDirectory">
+      <wsdl:input message="tns:GetDisplayNamefromActiveDirectorySoapIn" />
+      <wsdl:output message="tns:GetDisplayNamefromActiveDirectorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationfromActiveDirectory">
+      <wsdl:input message="tns:GetAuthenticationfromActiveDirectorySoapIn" />
+      <wsdl:output message="tns:GetAuthenticationfromActiveDirectorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationfromActiveDirectory_test">
+      <wsdl:input message="tns:GetAuthenticationfromActiveDirectory_testSoapIn" />
+      <wsdl:output message="tns:GetAuthenticationfromActiveDirectory_testSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEncryptedString">
+      <wsdl:input message="tns:GetEncryptedStringSoapIn" />
+      <wsdl:output message="tns:GetEncryptedStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDecryptedString">
+      <wsdl:input message="tns:GetDecryptedStringSoapIn" />
+      <wsdl:output message="tns:GetDecryptedStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails">
+      <wsdl:input message="tns:SendEmailsSoapIn" />
+      <wsdl:output message="tns:SendEmailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithAttachment">
+      <wsdl:input message="tns:SendEmailswithAttachmentSoapIn" />
+      <wsdl:output message="tns:SendEmailswithAttachmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithMultipleAttachment">
+      <wsdl:input message="tns:SendEmailswithMultipleAttachmentSoapIn" />
+      <wsdl:output message="tns:SendEmailswithMultipleAttachmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="checkholiday">
+      <wsdl:input message="tns:checkholidaySoapIn" />
+      <wsdl:output message="tns:checkholidaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="add_working_days">
+      <wsdl:input message="tns:add_working_daysSoapIn" />
+      <wsdl:output message="tns:add_working_daysSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GET_Mail_DEPT_DESG">
+      <wsdl:input message="tns:GET_Mail_DEPT_DESGSoapIn" />
+      <wsdl:output message="tns:GET_Mail_DEPT_DESGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmpidNameDeptDesg">
+      <wsdl:input message="tns:getEmpidNameDeptDesgSoapIn" />
+      <wsdl:output message="tns:getEmpidNameDeptDesgSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmpid">
+      <wsdl:input message="tns:getEmpidSoapIn" />
+      <wsdl:output message="tns:getEmpidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUsername_onEmpID">
+      <wsdl:input message="tns:getUsername_onEmpIDSoapIn" />
+      <wsdl:output message="tns:getUsername_onEmpIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CompanyName">
+      <wsdl:input message="tns:Get_CompanyNameSoapIn" />
+      <wsdl:output message="tns:Get_CompanyNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CompanyShortName">
+      <wsdl:input message="tns:Get_CompanyShortNameSoapIn" />
+      <wsdl:output message="tns:Get_CompanyShortNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Domain">
+      <wsdl:input message="tns:Get_DomainSoapIn" />
+      <wsdl:output message="tns:Get_DomainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Company_Logo">
+      <wsdl:input message="tns:Get_Company_LogoSoapIn" />
+      <wsdl:output message="tns:Get_Company_LogoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Company_Pic">
+      <wsdl:input message="tns:Get_Company_PicSoapIn" />
+      <wsdl:output message="tns:Get_Company_PicSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Datatable2HTMLtable_new">
+      <wsdl:input message="tns:Datatable2HTMLtable_newSoapIn" />
+      <wsdl:output message="tns:Datatable2HTMLtable_newSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Encryption64">
+      <wsdl:input message="tns:Encryption64SoapIn" />
+      <wsdl:output message="tns:Encryption64SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Decryption64">
+      <wsdl:input message="tns:Decryption64SoapIn" />
+      <wsdl:output message="tns:Decryption64SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_FinancialYear">
+      <wsdl:input message="tns:Get_FinancialYearSoapIn" />
+      <wsdl:output message="tns:Get_FinancialYearSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Email">
+      <wsdl:input message="tns:Get_EmailSoapIn" />
+      <wsdl:output message="tns:Get_EmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Username">
+      <wsdl:input message="tns:Get_UsernameSoapIn" />
+      <wsdl:output message="tns:Get_UsernameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Server_date">
+      <wsdl:input message="tns:Get_Server_dateSoapIn" />
+      <wsdl:output message="tns:Get_Server_dateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AD_GetReportingManager">
+      <wsdl:input message="tns:AD_GetReportingManagerSoapIn" />
+      <wsdl:output message="tns:AD_GetReportingManagerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Display_Email_Mobile_AD">
+      <wsdl:input message="tns:Get_Display_Email_Mobile_ADSoapIn" />
+      <wsdl:output message="tns:Get_Display_Email_Mobile_ADSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithAttachment_Priority">
+      <wsdl:input message="tns:SendEmailswithAttachment_PrioritySoapIn" />
+      <wsdl:output message="tns:SendEmailswithAttachment_PrioritySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails_Priority">
+      <wsdl:input message="tns:SendEmails_PrioritySoapIn" />
+      <wsdl:output message="tns:SendEmails_PrioritySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckHolidayonDate">
+      <wsdl:input message="tns:CheckHolidayonDateSoapIn" />
+      <wsdl:output message="tns:CheckHolidayonDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTrainingRequest">
+      <wsdl:input message="tns:SendTrainingRequestSoapIn" />
+      <wsdl:output message="tns:SendTrainingRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMeetingRequest">
+      <wsdl:input message="tns:SendMeetingRequestSoapIn" />
+      <wsdl:output message="tns:SendMeetingRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDisplayName">
+      <wsdl:input message="tns:CheckDisplayNameSoapIn" />
+      <wsdl:output message="tns:CheckDisplayNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails_Testing_Infra">
+      <wsdl:input message="tns:SendEmails_Testing_InfraSoapIn" />
+      <wsdl:output message="tns:SendEmails_Testing_InfraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_Application_Hits">
+      <wsdl:input message="tns:Update_Application_HitsSoapIn" />
+      <wsdl:output message="tns:Update_Application_HitsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getHOGdetails">
+      <wsdl:input message="tns:getHOGdetailsSoapIn" />
+      <wsdl:output message="tns:getHOGdetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AD_ReportingMGRDetails_UserID">
+      <wsdl:input message="tns:AD_ReportingMGRDetails_UserIDSoapIn" />
+      <wsdl:output message="tns:AD_ReportingMGRDetails_UserIDSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="listHttpGet">
+    <wsdl:operation name="GetClientIPAddress">
+      <wsdl:input message="tns:GetClientIPAddressHttpGetIn" />
+      <wsdl:output message="tns:GetClientIPAddressHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayNamefromActiveDirectory">
+      <wsdl:input message="tns:GetDisplayNamefromActiveDirectoryHttpGetIn" />
+      <wsdl:output message="tns:GetDisplayNamefromActiveDirectoryHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationfromActiveDirectory">
+      <wsdl:input message="tns:GetAuthenticationfromActiveDirectoryHttpGetIn" />
+      <wsdl:output message="tns:GetAuthenticationfromActiveDirectoryHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationfromActiveDirectory_test">
+      <wsdl:input message="tns:GetAuthenticationfromActiveDirectory_testHttpGetIn" />
+      <wsdl:output message="tns:GetAuthenticationfromActiveDirectory_testHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEncryptedString">
+      <wsdl:input message="tns:GetEncryptedStringHttpGetIn" />
+      <wsdl:output message="tns:GetEncryptedStringHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDecryptedString">
+      <wsdl:input message="tns:GetDecryptedStringHttpGetIn" />
+      <wsdl:output message="tns:GetDecryptedStringHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails">
+      <wsdl:input message="tns:SendEmailsHttpGetIn" />
+      <wsdl:output message="tns:SendEmailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithAttachment">
+      <wsdl:input message="tns:SendEmailswithAttachmentHttpGetIn" />
+      <wsdl:output message="tns:SendEmailswithAttachmentHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithMultipleAttachment">
+      <wsdl:input message="tns:SendEmailswithMultipleAttachmentHttpGetIn" />
+      <wsdl:output message="tns:SendEmailswithMultipleAttachmentHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="checkholiday">
+      <wsdl:input message="tns:checkholidayHttpGetIn" />
+      <wsdl:output message="tns:checkholidayHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="add_working_days">
+      <wsdl:input message="tns:add_working_daysHttpGetIn" />
+      <wsdl:output message="tns:add_working_daysHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GET_Mail_DEPT_DESG">
+      <wsdl:input message="tns:GET_Mail_DEPT_DESGHttpGetIn" />
+      <wsdl:output message="tns:GET_Mail_DEPT_DESGHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmpidNameDeptDesg">
+      <wsdl:input message="tns:getEmpidNameDeptDesgHttpGetIn" />
+      <wsdl:output message="tns:getEmpidNameDeptDesgHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmpid">
+      <wsdl:input message="tns:getEmpidHttpGetIn" />
+      <wsdl:output message="tns:getEmpidHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUsername_onEmpID">
+      <wsdl:input message="tns:getUsername_onEmpIDHttpGetIn" />
+      <wsdl:output message="tns:getUsername_onEmpIDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CompanyName">
+      <wsdl:input message="tns:Get_CompanyNameHttpGetIn" />
+      <wsdl:output message="tns:Get_CompanyNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CompanyShortName">
+      <wsdl:input message="tns:Get_CompanyShortNameHttpGetIn" />
+      <wsdl:output message="tns:Get_CompanyShortNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Domain">
+      <wsdl:input message="tns:Get_DomainHttpGetIn" />
+      <wsdl:output message="tns:Get_DomainHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Company_Logo">
+      <wsdl:input message="tns:Get_Company_LogoHttpGetIn" />
+      <wsdl:output message="tns:Get_Company_LogoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Company_Pic">
+      <wsdl:input message="tns:Get_Company_PicHttpGetIn" />
+      <wsdl:output message="tns:Get_Company_PicHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Datatable2HTMLtable_new">
+      <wsdl:input message="tns:Datatable2HTMLtable_newHttpGetIn" />
+      <wsdl:output message="tns:Datatable2HTMLtable_newHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Encryption64">
+      <wsdl:input message="tns:Encryption64HttpGetIn" />
+      <wsdl:output message="tns:Encryption64HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Decryption64">
+      <wsdl:input message="tns:Decryption64HttpGetIn" />
+      <wsdl:output message="tns:Decryption64HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_FinancialYear">
+      <wsdl:input message="tns:Get_FinancialYearHttpGetIn" />
+      <wsdl:output message="tns:Get_FinancialYearHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Email">
+      <wsdl:input message="tns:Get_EmailHttpGetIn" />
+      <wsdl:output message="tns:Get_EmailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Username">
+      <wsdl:input message="tns:Get_UsernameHttpGetIn" />
+      <wsdl:output message="tns:Get_UsernameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Server_date">
+      <wsdl:input message="tns:Get_Server_dateHttpGetIn" />
+      <wsdl:output message="tns:Get_Server_dateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AD_GetReportingManager">
+      <wsdl:input message="tns:AD_GetReportingManagerHttpGetIn" />
+      <wsdl:output message="tns:AD_GetReportingManagerHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Display_Email_Mobile_AD">
+      <wsdl:input message="tns:Get_Display_Email_Mobile_ADHttpGetIn" />
+      <wsdl:output message="tns:Get_Display_Email_Mobile_ADHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithAttachment_Priority">
+      <wsdl:input message="tns:SendEmailswithAttachment_PriorityHttpGetIn" />
+      <wsdl:output message="tns:SendEmailswithAttachment_PriorityHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails_Priority">
+      <wsdl:input message="tns:SendEmails_PriorityHttpGetIn" />
+      <wsdl:output message="tns:SendEmails_PriorityHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckHolidayonDate">
+      <wsdl:input message="tns:CheckHolidayonDateHttpGetIn" />
+      <wsdl:output message="tns:CheckHolidayonDateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTrainingRequest">
+      <wsdl:input message="tns:SendTrainingRequestHttpGetIn" />
+      <wsdl:output message="tns:SendTrainingRequestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMeetingRequest">
+      <wsdl:input message="tns:SendMeetingRequestHttpGetIn" />
+      <wsdl:output message="tns:SendMeetingRequestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDisplayName">
+      <wsdl:input message="tns:CheckDisplayNameHttpGetIn" />
+      <wsdl:output message="tns:CheckDisplayNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails_Testing_Infra">
+      <wsdl:input message="tns:SendEmails_Testing_InfraHttpGetIn" />
+      <wsdl:output message="tns:SendEmails_Testing_InfraHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_Application_Hits">
+      <wsdl:input message="tns:Update_Application_HitsHttpGetIn" />
+      <wsdl:output message="tns:Update_Application_HitsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getHOGdetails">
+      <wsdl:input message="tns:getHOGdetailsHttpGetIn" />
+      <wsdl:output message="tns:getHOGdetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AD_ReportingMGRDetails_UserID">
+      <wsdl:input message="tns:AD_ReportingMGRDetails_UserIDHttpGetIn" />
+      <wsdl:output message="tns:AD_ReportingMGRDetails_UserIDHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="listHttpPost">
+    <wsdl:operation name="GetClientIPAddress">
+      <wsdl:input message="tns:GetClientIPAddressHttpPostIn" />
+      <wsdl:output message="tns:GetClientIPAddressHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayNamefromActiveDirectory">
+      <wsdl:input message="tns:GetDisplayNamefromActiveDirectoryHttpPostIn" />
+      <wsdl:output message="tns:GetDisplayNamefromActiveDirectoryHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationfromActiveDirectory">
+      <wsdl:input message="tns:GetAuthenticationfromActiveDirectoryHttpPostIn" />
+      <wsdl:output message="tns:GetAuthenticationfromActiveDirectoryHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationfromActiveDirectory_test">
+      <wsdl:input message="tns:GetAuthenticationfromActiveDirectory_testHttpPostIn" />
+      <wsdl:output message="tns:GetAuthenticationfromActiveDirectory_testHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEncryptedString">
+      <wsdl:input message="tns:GetEncryptedStringHttpPostIn" />
+      <wsdl:output message="tns:GetEncryptedStringHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDecryptedString">
+      <wsdl:input message="tns:GetDecryptedStringHttpPostIn" />
+      <wsdl:output message="tns:GetDecryptedStringHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails">
+      <wsdl:input message="tns:SendEmailsHttpPostIn" />
+      <wsdl:output message="tns:SendEmailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithAttachment">
+      <wsdl:input message="tns:SendEmailswithAttachmentHttpPostIn" />
+      <wsdl:output message="tns:SendEmailswithAttachmentHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithMultipleAttachment">
+      <wsdl:input message="tns:SendEmailswithMultipleAttachmentHttpPostIn" />
+      <wsdl:output message="tns:SendEmailswithMultipleAttachmentHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="checkholiday">
+      <wsdl:input message="tns:checkholidayHttpPostIn" />
+      <wsdl:output message="tns:checkholidayHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="add_working_days">
+      <wsdl:input message="tns:add_working_daysHttpPostIn" />
+      <wsdl:output message="tns:add_working_daysHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GET_Mail_DEPT_DESG">
+      <wsdl:input message="tns:GET_Mail_DEPT_DESGHttpPostIn" />
+      <wsdl:output message="tns:GET_Mail_DEPT_DESGHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmpidNameDeptDesg">
+      <wsdl:input message="tns:getEmpidNameDeptDesgHttpPostIn" />
+      <wsdl:output message="tns:getEmpidNameDeptDesgHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmpid">
+      <wsdl:input message="tns:getEmpidHttpPostIn" />
+      <wsdl:output message="tns:getEmpidHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUsername_onEmpID">
+      <wsdl:input message="tns:getUsername_onEmpIDHttpPostIn" />
+      <wsdl:output message="tns:getUsername_onEmpIDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CompanyName">
+      <wsdl:input message="tns:Get_CompanyNameHttpPostIn" />
+      <wsdl:output message="tns:Get_CompanyNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CompanyShortName">
+      <wsdl:input message="tns:Get_CompanyShortNameHttpPostIn" />
+      <wsdl:output message="tns:Get_CompanyShortNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Domain">
+      <wsdl:input message="tns:Get_DomainHttpPostIn" />
+      <wsdl:output message="tns:Get_DomainHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Company_Logo">
+      <wsdl:input message="tns:Get_Company_LogoHttpPostIn" />
+      <wsdl:output message="tns:Get_Company_LogoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Company_Pic">
+      <wsdl:input message="tns:Get_Company_PicHttpPostIn" />
+      <wsdl:output message="tns:Get_Company_PicHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Datatable2HTMLtable_new">
+      <wsdl:input message="tns:Datatable2HTMLtable_newHttpPostIn" />
+      <wsdl:output message="tns:Datatable2HTMLtable_newHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Encryption64">
+      <wsdl:input message="tns:Encryption64HttpPostIn" />
+      <wsdl:output message="tns:Encryption64HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Decryption64">
+      <wsdl:input message="tns:Decryption64HttpPostIn" />
+      <wsdl:output message="tns:Decryption64HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_FinancialYear">
+      <wsdl:input message="tns:Get_FinancialYearHttpPostIn" />
+      <wsdl:output message="tns:Get_FinancialYearHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Email">
+      <wsdl:input message="tns:Get_EmailHttpPostIn" />
+      <wsdl:output message="tns:Get_EmailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Username">
+      <wsdl:input message="tns:Get_UsernameHttpPostIn" />
+      <wsdl:output message="tns:Get_UsernameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Server_date">
+      <wsdl:input message="tns:Get_Server_dateHttpPostIn" />
+      <wsdl:output message="tns:Get_Server_dateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AD_GetReportingManager">
+      <wsdl:input message="tns:AD_GetReportingManagerHttpPostIn" />
+      <wsdl:output message="tns:AD_GetReportingManagerHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Display_Email_Mobile_AD">
+      <wsdl:input message="tns:Get_Display_Email_Mobile_ADHttpPostIn" />
+      <wsdl:output message="tns:Get_Display_Email_Mobile_ADHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithAttachment_Priority">
+      <wsdl:input message="tns:SendEmailswithAttachment_PriorityHttpPostIn" />
+      <wsdl:output message="tns:SendEmailswithAttachment_PriorityHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails_Priority">
+      <wsdl:input message="tns:SendEmails_PriorityHttpPostIn" />
+      <wsdl:output message="tns:SendEmails_PriorityHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckHolidayonDate">
+      <wsdl:input message="tns:CheckHolidayonDateHttpPostIn" />
+      <wsdl:output message="tns:CheckHolidayonDateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTrainingRequest">
+      <wsdl:input message="tns:SendTrainingRequestHttpPostIn" />
+      <wsdl:output message="tns:SendTrainingRequestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMeetingRequest">
+      <wsdl:input message="tns:SendMeetingRequestHttpPostIn" />
+      <wsdl:output message="tns:SendMeetingRequestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDisplayName">
+      <wsdl:input message="tns:CheckDisplayNameHttpPostIn" />
+      <wsdl:output message="tns:CheckDisplayNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails_Testing_Infra">
+      <wsdl:input message="tns:SendEmails_Testing_InfraHttpPostIn" />
+      <wsdl:output message="tns:SendEmails_Testing_InfraHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_Application_Hits">
+      <wsdl:input message="tns:Update_Application_HitsHttpPostIn" />
+      <wsdl:output message="tns:Update_Application_HitsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getHOGdetails">
+      <wsdl:input message="tns:getHOGdetailsHttpPostIn" />
+      <wsdl:output message="tns:getHOGdetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AD_ReportingMGRDetails_UserID">
+      <wsdl:input message="tns:AD_ReportingMGRDetails_UserIDHttpPostIn" />
+      <wsdl:output message="tns:AD_ReportingMGRDetails_UserIDHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="listSoap" type="tns:listSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetClientIPAddress">
+      <soap:operation soapAction="NDPL WebService/GetClientIPAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayNamefromActiveDirectory">
+      <soap:operation soapAction="NDPL WebService/GetDisplayNamefromActiveDirectory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationfromActiveDirectory">
+      <soap:operation soapAction="NDPL WebService/GetAuthenticationfromActiveDirectory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationfromActiveDirectory_test">
+      <soap:operation soapAction="NDPL WebService/GetAuthenticationfromActiveDirectory_test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEncryptedString">
+      <soap:operation soapAction="NDPL WebService/GetEncryptedString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDecryptedString">
+      <soap:operation soapAction="NDPL WebService/GetDecryptedString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails">
+      <soap:operation soapAction="NDPL WebService/SendEmails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithAttachment">
+      <soap:operation soapAction="NDPL WebService/SendEmailswithAttachment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithMultipleAttachment">
+      <soap:operation soapAction="NDPL WebService/SendEmailswithMultipleAttachment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkholiday">
+      <soap:operation soapAction="NDPL WebService/checkholiday" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_working_days">
+      <soap:operation soapAction="NDPL WebService/add_working_days" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GET_Mail_DEPT_DESG">
+      <soap:operation soapAction="NDPL WebService/GET_Mail_DEPT_DESG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmpidNameDeptDesg">
+      <soap:operation soapAction="NDPL WebService/getEmpidNameDeptDesg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmpid">
+      <soap:operation soapAction="NDPL WebService/getEmpid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsername_onEmpID">
+      <soap:operation soapAction="NDPL WebService/getUsername_onEmpID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CompanyName">
+      <soap:operation soapAction="NDPL WebService/Get_CompanyName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CompanyShortName">
+      <soap:operation soapAction="NDPL WebService/Get_CompanyShortName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Domain">
+      <soap:operation soapAction="NDPL WebService/Get_Domain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Company_Logo">
+      <soap:operation soapAction="NDPL WebService/Get_Company_Logo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Company_Pic">
+      <soap:operation soapAction="NDPL WebService/Get_Company_Pic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Datatable2HTMLtable_new">
+      <soap:operation soapAction="NDPL WebService/Datatable2HTMLtable_new" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Encryption64">
+      <soap:operation soapAction="NDPL WebService/Encryption64" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Decryption64">
+      <soap:operation soapAction="NDPL WebService/Decryption64" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_FinancialYear">
+      <soap:operation soapAction="NDPL WebService/Get_FinancialYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Email">
+      <soap:operation soapAction="NDPL WebService/Get_Email" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Username">
+      <soap:operation soapAction="NDPL WebService/Get_Username" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Server_date">
+      <soap:operation soapAction="NDPL WebService/Get_Server_date" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AD_GetReportingManager">
+      <soap:operation soapAction="NDPL WebService/AD_GetReportingManager" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Display_Email_Mobile_AD">
+      <soap:operation soapAction="NDPL WebService/Get_Display_Email_Mobile_AD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithAttachment_Priority">
+      <soap:operation soapAction="NDPL WebService/SendEmailswithAttachment_Priority" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails_Priority">
+      <soap:operation soapAction="NDPL WebService/SendEmails_Priority" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckHolidayonDate">
+      <soap:operation soapAction="NDPL WebService/CheckHolidayonDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTrainingRequest">
+      <soap:operation soapAction="NDPL WebService/SendTrainingRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMeetingRequest">
+      <soap:operation soapAction="NDPL WebService/SendMeetingRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDisplayName">
+      <soap:operation soapAction="NDPL WebService/CheckDisplayName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails_Testing_Infra">
+      <soap:operation soapAction="NDPL WebService/SendEmails_Testing_Infra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_Application_Hits">
+      <soap:operation soapAction="NDPL WebService/Update_Application_Hits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHOGdetails">
+      <soap:operation soapAction="NDPL WebService/getHOGdetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AD_ReportingMGRDetails_UserID">
+      <soap:operation soapAction="NDPL WebService/AD_ReportingMGRDetails_UserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="listHttpGet" type="tns:listHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetClientIPAddress">
+      <http:operation location="/GetClientIPAddress" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayNamefromActiveDirectory">
+      <http:operation location="/GetDisplayNamefromActiveDirectory" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationfromActiveDirectory">
+      <http:operation location="/GetAuthenticationfromActiveDirectory" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationfromActiveDirectory_test">
+      <http:operation location="/GetAuthenticationfromActiveDirectory_test" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEncryptedString">
+      <http:operation location="/GetEncryptedString" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDecryptedString">
+      <http:operation location="/GetDecryptedString" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails">
+      <http:operation location="/SendEmails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithAttachment">
+      <http:operation location="/SendEmailswithAttachment" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithMultipleAttachment">
+      <http:operation location="/SendEmailswithMultipleAttachment" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkholiday">
+      <http:operation location="/checkholiday" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_working_days">
+      <http:operation location="/add_working_days" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GET_Mail_DEPT_DESG">
+      <http:operation location="/GET_Mail_DEPT_DESG" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmpidNameDeptDesg">
+      <http:operation location="/getEmpidNameDeptDesg" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmpid">
+      <http:operation location="/getEmpid" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsername_onEmpID">
+      <http:operation location="/getUsername_onEmpID" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CompanyName">
+      <http:operation location="/Get_CompanyName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CompanyShortName">
+      <http:operation location="/Get_CompanyShortName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Domain">
+      <http:operation location="/Get_Domain" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Company_Logo">
+      <http:operation location="/Get_Company_Logo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Company_Pic">
+      <http:operation location="/Get_Company_Pic" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Datatable2HTMLtable_new">
+      <http:operation location="/Datatable2HTMLtable_new" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Encryption64">
+      <http:operation location="/Encryption64" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Decryption64">
+      <http:operation location="/Decryption64" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_FinancialYear">
+      <http:operation location="/Get_FinancialYear" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Email">
+      <http:operation location="/Get_Email" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Username">
+      <http:operation location="/Get_Username" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Server_date">
+      <http:operation location="/Get_Server_date" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AD_GetReportingManager">
+      <http:operation location="/AD_GetReportingManager" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Display_Email_Mobile_AD">
+      <http:operation location="/Get_Display_Email_Mobile_AD" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithAttachment_Priority">
+      <http:operation location="/SendEmailswithAttachment_Priority" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails_Priority">
+      <http:operation location="/SendEmails_Priority" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckHolidayonDate">
+      <http:operation location="/CheckHolidayonDate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTrainingRequest">
+      <http:operation location="/SendTrainingRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMeetingRequest">
+      <http:operation location="/SendMeetingRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDisplayName">
+      <http:operation location="/CheckDisplayName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails_Testing_Infra">
+      <http:operation location="/SendEmails_Testing_Infra" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_Application_Hits">
+      <http:operation location="/Update_Application_Hits" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHOGdetails">
+      <http:operation location="/getHOGdetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AD_ReportingMGRDetails_UserID">
+      <http:operation location="/AD_ReportingMGRDetails_UserID" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="listHttpPost" type="tns:listHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetClientIPAddress">
+      <http:operation location="/GetClientIPAddress" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayNamefromActiveDirectory">
+      <http:operation location="/GetDisplayNamefromActiveDirectory" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationfromActiveDirectory">
+      <http:operation location="/GetAuthenticationfromActiveDirectory" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthenticationfromActiveDirectory_test">
+      <http:operation location="/GetAuthenticationfromActiveDirectory_test" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEncryptedString">
+      <http:operation location="/GetEncryptedString" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDecryptedString">
+      <http:operation location="/GetDecryptedString" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails">
+      <http:operation location="/SendEmails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithAttachment">
+      <http:operation location="/SendEmailswithAttachment" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithMultipleAttachment">
+      <http:operation location="/SendEmailswithMultipleAttachment" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkholiday">
+      <http:operation location="/checkholiday" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_working_days">
+      <http:operation location="/add_working_days" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GET_Mail_DEPT_DESG">
+      <http:operation location="/GET_Mail_DEPT_DESG" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmpidNameDeptDesg">
+      <http:operation location="/getEmpidNameDeptDesg" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmpid">
+      <http:operation location="/getEmpid" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsername_onEmpID">
+      <http:operation location="/getUsername_onEmpID" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CompanyName">
+      <http:operation location="/Get_CompanyName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CompanyShortName">
+      <http:operation location="/Get_CompanyShortName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Domain">
+      <http:operation location="/Get_Domain" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Company_Logo">
+      <http:operation location="/Get_Company_Logo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Company_Pic">
+      <http:operation location="/Get_Company_Pic" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Datatable2HTMLtable_new">
+      <http:operation location="/Datatable2HTMLtable_new" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Encryption64">
+      <http:operation location="/Encryption64" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Decryption64">
+      <http:operation location="/Decryption64" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_FinancialYear">
+      <http:operation location="/Get_FinancialYear" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Email">
+      <http:operation location="/Get_Email" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Username">
+      <http:operation location="/Get_Username" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Server_date">
+      <http:operation location="/Get_Server_date" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AD_GetReportingManager">
+      <http:operation location="/AD_GetReportingManager" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Display_Email_Mobile_AD">
+      <http:operation location="/Get_Display_Email_Mobile_AD" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailswithAttachment_Priority">
+      <http:operation location="/SendEmailswithAttachment_Priority" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails_Priority">
+      <http:operation location="/SendEmails_Priority" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckHolidayonDate">
+      <http:operation location="/CheckHolidayonDate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTrainingRequest">
+      <http:operation location="/SendTrainingRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMeetingRequest">
+      <http:operation location="/SendMeetingRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDisplayName">
+      <http:operation location="/CheckDisplayName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmails_Testing_Infra">
+      <http:operation location="/SendEmails_Testing_Infra" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_Application_Hits">
+      <http:operation location="/Update_Application_Hits" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHOGdetails">
+      <http:operation location="/getHOGdetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AD_ReportingMGRDetails_UserID">
+      <http:operation location="/AD_ReportingMGRDetails_UserID" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="list">
+    <wsdl:port name="listSoap" binding="tns:listSoap">
+      <soap:address location="http://192.168.113.119/ndplwebservice/list.asmx" />
+    </wsdl:port>
+    <wsdl:port name="listHttpGet" binding="tns:listHttpGet">
+      <http:address location="http://192.168.113.119/ndplwebservice/list.asmx" />
+    </wsdl:port>
+    <wsdl:port name="listHttpPost" binding="tns:listHttpPost">
+      <http:address location="http://192.168.113.119/ndplwebservice/list.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

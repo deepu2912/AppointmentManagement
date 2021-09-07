@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Fetchdelivery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchdeliveryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchdeliveryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sendsms">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mobileno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="messagetext" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SenderId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sendsmsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sendsmsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sendsmssmrd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mobileno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="messagetext" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SenderId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SAPID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sendsmssmrdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sendsmssmrdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="FetchdeliverySoapIn">
+    <wsdl:part name="parameters" element="tns:Fetchdelivery" />
+  </wsdl:message>
+  <wsdl:message name="FetchdeliverySoapOut">
+    <wsdl:part name="parameters" element="tns:FetchdeliveryResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendsmsSoapIn">
+    <wsdl:part name="parameters" element="tns:sendsms" />
+  </wsdl:message>
+  <wsdl:message name="sendsmsSoapOut">
+    <wsdl:part name="parameters" element="tns:sendsmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendsmssmrdSoapIn">
+    <wsdl:part name="parameters" element="tns:sendsmssmrd" />
+  </wsdl:message>
+  <wsdl:message name="sendsmssmrdSoapOut">
+    <wsdl:part name="parameters" element="tns:sendsmssmrdResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchdeliveryHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FetchdeliveryHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="sendsmsHttpGetIn">
+    <wsdl:part name="mobileno" type="s:string" />
+    <wsdl:part name="messagetext" type="s:string" />
+    <wsdl:part name="SenderId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendsmsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="sendsmssmrdHttpGetIn">
+    <wsdl:part name="mobileno" type="s:string" />
+    <wsdl:part name="messagetext" type="s:string" />
+    <wsdl:part name="SenderId" type="s:string" />
+    <wsdl:part name="SAPID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendsmssmrdHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="FetchdeliveryHttpPostIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FetchdeliveryHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="sendsmsHttpPostIn">
+    <wsdl:part name="mobileno" type="s:string" />
+    <wsdl:part name="messagetext" type="s:string" />
+    <wsdl:part name="SenderId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendsmsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="sendsmssmrdHttpPostIn">
+    <wsdl:part name="mobileno" type="s:string" />
+    <wsdl:part name="messagetext" type="s:string" />
+    <wsdl:part name="SenderId" type="s:string" />
+    <wsdl:part name="SAPID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendsmssmrdHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="Fetchdelivery">
+      <wsdl:input message="tns:FetchdeliverySoapIn" />
+      <wsdl:output message="tns:FetchdeliverySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendsms">
+      <wsdl:input message="tns:sendsmsSoapIn" />
+      <wsdl:output message="tns:sendsmsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendsmssmrd">
+      <wsdl:input message="tns:sendsmssmrdSoapIn" />
+      <wsdl:output message="tns:sendsmssmrdSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Service1HttpGet">
+    <wsdl:operation name="Fetchdelivery">
+      <wsdl:input message="tns:FetchdeliveryHttpGetIn" />
+      <wsdl:output message="tns:FetchdeliveryHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendsms">
+      <wsdl:input message="tns:sendsmsHttpGetIn" />
+      <wsdl:output message="tns:sendsmsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendsmssmrd">
+      <wsdl:input message="tns:sendsmssmrdHttpGetIn" />
+      <wsdl:output message="tns:sendsmssmrdHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Service1HttpPost">
+    <wsdl:operation name="Fetchdelivery">
+      <wsdl:input message="tns:FetchdeliveryHttpPostIn" />
+      <wsdl:output message="tns:FetchdeliveryHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendsms">
+      <wsdl:input message="tns:sendsmsHttpPostIn" />
+      <wsdl:output message="tns:sendsmsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendsmssmrd">
+      <wsdl:input message="tns:sendsmssmrdHttpPostIn" />
+      <wsdl:output message="tns:sendsmssmrdHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Fetchdelivery">
+      <soap:operation soapAction="http://tempuri.org/Fetchdelivery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendsms">
+      <soap:operation soapAction="http://tempuri.org/sendsms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendsmssmrd">
+      <soap:operation soapAction="http://tempuri.org/sendsmssmrd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Fetchdelivery">
+      <soap12:operation soapAction="http://tempuri.org/Fetchdelivery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendsms">
+      <soap12:operation soapAction="http://tempuri.org/sendsms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendsmssmrd">
+      <soap12:operation soapAction="http://tempuri.org/sendsmssmrd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1HttpGet" type="tns:Service1HttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Fetchdelivery">
+      <http:operation location="/Fetchdelivery" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendsms">
+      <http:operation location="/sendsms" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendsmssmrd">
+      <http:operation location="/sendsmssmrd" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1HttpPost" type="tns:Service1HttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Fetchdelivery">
+      <http:operation location="/Fetchdelivery" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendsms">
+      <http:operation location="/sendsms" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendsmssmrd">
+      <http:operation location="/sendsmssmrd" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://192.168.113.125/smspush/service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://192.168.113.125/smspush/service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1HttpGet" binding="tns:Service1HttpGet">
+      <http:address location="http://192.168.113.125/smspush/service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1HttpPost" binding="tns:Service1HttpPost">
+      <http:address location="http://192.168.113.125/smspush/service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

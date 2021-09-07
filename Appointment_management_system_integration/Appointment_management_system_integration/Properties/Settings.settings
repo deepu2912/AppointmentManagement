@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Appointment_management_system_integration.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Appointment_management_system_integration_weblist_list" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.113.119/ndplwebservice/list.asmx</Value>
+    </Setting>
+    <Setting Name="Appointment_management_system_integration_notificationstatus_RequestTracking_Website_OutService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://piprd:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=Sys_Website_P&amp;receiverParty=&amp;receiverService=&amp;interface=RequestTracking_Website_Out&amp;interfaceNamespace=urn%3ANDPL.com%3AISU%3ACS%3ARequestTracking</Value>
+    </Setting>
+    <Setting Name="Appointment_management_system_integration_canostatus_OutstandingBill_Website_OutService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://piprd:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=Sys_Website_P&amp;receiverParty=&amp;receiverService=&amp;interface=OutstandingBill_Website_Out&amp;interfaceNamespace=urn%3ANDPL.com%3AISU%3ACS%3APayment</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

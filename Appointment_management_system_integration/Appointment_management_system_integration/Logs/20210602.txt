@@ -1,0 +1,46 @@
+
+Log Entry : 12.46.11 PM 02 June 2021
+  :
+  :AdminMaster :== Thread was being aborted.
+-------------------------------
+
+Log Entry : 12.46.12 PM 02 June 2021
+  :
+  :AdminMaster :== Thread was being aborted.
+-------------------------------
+
+Log Entry : 12.52.16 PM 02 June 2021
+  :
+  :Add Department :== startIndex cannot be larger than length of string.
+Parameter name: startIndex
+-------------------------------
+
+Log Entry : 1.12.44 PM 02 June 2021
+  :
+  :Add Department :== Cannot find column 0.
+-------------------------------
+
+Log Entry : 1.14.41 PM 02 June 2021
+  :
+  :AdminMaster :== Thread was being aborted.
+-------------------------------
+
+Log Entry : 2.23.25 PM 02 June 2021
+  :
+  :Add Department :== Cannot find column 1.
+-------------------------------
+
+Log Entry : 2.27.46 PM 02 June 2021
+  :
+  :Add Department :== Cannot find column 1.
+-------------------------------
+
+Log Entry : 2.27.51 PM 02 June 2021
+  :
+  :Add Department :== Cannot find column 1.
+-------------------------------
+
+Log Entry : 2.29.27 PM 02 June 2021
+  :
+  :Add Department :== Cannot find column 1.
+-------------------------------

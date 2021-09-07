@@ -1,0 +1,10 @@
+
+Log Entry : 2.50.01 PM 25 August 2021
+  :
+  :Update Appointment Status :== Incorrect syntax near the keyword 'And'.
+-------------------------------
+
+Log Entry : 2.50.35 PM 25 August 2021
+  :
+  :Update Appointment Status :== Incorrect syntax near the keyword 'And'.
+-------------------------------
