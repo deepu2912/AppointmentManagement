@@ -1,0 +1,270 @@
+
+Log Entry : 2:57:18 PM Monday, September 13, 2021
+  :
+  :EmployeeID  :== 9f979d979b
+-------------------------------
+
+Log Entry : 2:57:18 PM Monday, September 13, 2021
+  :
+  :Long Service  :== https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d
+-------------------------------
+
+Log Entry : 2:57:18 PM Monday, September 13, 2021
+  :
+  :Short Service  :== cedadad6d9a09595dacbc7d3d994d3cfc9d8d5d9d5ccda94c9d5d395d295d3cbcbdadbd693d0d5cfd495979f8b99c7d3cbcbdacfd4cdc5b4d0cddeb3e0bfe0bf98bbdac0bad2d0b3a99696c0d0b798b2bacd9bb3bac9dabfd3b0d3b4baaf96b4adb8cec0d3bfdf8b9a96daced8cbc7ca94dc989596a5c9d5d4dacbdedaa38b9dc88b9898bacfca8b98988b99c78b98989d9e999fcac997c7939fc99a99939ac99b98939e98999a93999b9d9899999f99c99ccb9d8b98988b98c98b9898b5cfca8b98988b99c78b9898c79bc79e9c97c9c7939ec7cc9d939a9a9ec993c79b9ec7939ec7c79b9a9d9f9bcacacc9b8b98988b9dca
+-------------------------------
+
+Log Entry : 2:57:18 PM Monday, September 13, 2021
+  :
+  :Continue.... :== 
+-------------------------------
+
+Log Entry : 2:57:18 PM Monday, September 13, 2021
+  :
+  :Continue 1.... :== 
+-------------------------------
+
+Log Entry : 2:57:21 PM Monday, September 13, 2021
+  :
+  :Continue 2.... :== 
+-------------------------------
+
+Log Entry : 2:57:21 PM Monday, September 13, 2021
+  :
+  :Short Url  :== https://webtest.tpdelhi.com/meeting/api/uri/oxysaby0
+-------------------------------
+
+Log Entry : 2:57:21 PM Monday, September 13, 2021
+  :
+  :Long Url  :== https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d
+-------------------------------
+
+Log Entry : 2:57:21 PM Monday, September 13, 2021
+  :
+  :Query  :== Update Tbl_User_Master Set MeetingUrl = 'https://webtest.tpdelhi.com/meeting/api/uri/oxysaby0', Original_MeetingURL = 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d'  ,  Updated_by = '91210'  Where ID = '107' and EMP_ID = '91715'
+-------------------------------
+
+Log Entry : 3:29:39 PM Monday, September 13, 2021
+  :
+  :EmployeeID  :== 9f979d979b
+-------------------------------
+
+Log Entry : 3:29:39 PM Monday, September 13, 2021
+  :
+  :Long Service  :== https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d
+-------------------------------
+
+Log Entry : 3:29:39 PM Monday, September 13, 2021
+  :
+  :Short Service  :== cedadad6d9a09595dacbc7d3d994d3cfc9d8d5d9d5ccda94c9d5d395d295d3cbcbdadbd693d0d5cfd495979f8b99c7d3cbcbdacfd4cdc5b4d0cddeb3e0bfe0bf98bbdac0bad2d0b3a99696c0d0b798b2bacd9bb3bac9dabfd3b0d3b4baaf96b4adb8cec0d3bfdf8b9a96daced8cbc7ca94dc989596a5c9d5d4dacbdedaa38b9dc88b9898bacfca8b98988b99c78b98989d9e999fcac997c7939fc99a99939ac99b98939e98999a93999b9d9899999f99c99ccb9d8b98988b98c98b9898b5cfca8b98988b99c78b9898c79bc79e9c97c9c7939ec7cc9d939a9a9ec993c79b9ec7939ec7c79b9a9d9f9bcacacc9b8b98988b9dca
+-------------------------------
+
+Log Entry : 3:29:39 PM Monday, September 13, 2021
+  :
+  :Continue.... :== 
+-------------------------------
+
+Log Entry : 3:29:39 PM Monday, September 13, 2021
+  :
+  :Continue 1.... :== 
+-------------------------------
+
+Log Entry : 3:29:39 PM Monday, September 13, 2021
+  :
+  :Continue 2.... :== 
+-------------------------------
+
+Log Entry : 3:29:39 PM Monday, September 13, 2021
+  :
+  :Short Url  :== https://webtest.tpdelhi.com/meeting/api/uri/yGoKFGsV
+-------------------------------
+
+Log Entry : 3:29:39 PM Monday, September 13, 2021
+  :
+  :Long Url  :== https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d
+-------------------------------
+
+Log Entry : 3:29:39 PM Monday, September 13, 2021
+  :
+  :Query  :== Update Tbl_User_Master Set MeetingUrl = 'https://webtest.tpdelhi.com/meeting/api/uri/yGoKFGsV', Original_MeetingURL = 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d'  ,  Updated_by = '91210'  Where ID = '107' and EMP_ID = '91715'
+-------------------------------
+
+Log Entry : 3:31:14 PM Monday, September 13, 2021
+  :
+  :EmployeeID  :== 9f979d979b
+-------------------------------
+
+Log Entry : 3:31:14 PM Monday, September 13, 2021
+  :
+  :Long Service  :== https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d
+-------------------------------
+
+Log Entry : 3:31:14 PM Monday, September 13, 2021
+  :
+  :Short Service  :== cedadad6d9a09595dacbc7d3d994d3cfc9d8d5d9d5ccda94c9d5d395d295d3cbcbdadbd693d0d5cfd495979f8b99c7d3cbcbdacfd4cdc5b4d0cddeb3e0bfe0bf98bbdac0bad2d0b3a99696c0d0b798b2bacd9bb3bac9dabfd3b0d3b4baaf96b4adb8cec0d3bfdf8b9a96daced8cbc7ca94dc989596a5c9d5d4dacbdedaa38b9dc88b9898bacfca8b98988b99c78b98989d9e999fcac997c7939fc99a99939ac99b98939e98999a93999b9d9899999f99c99ccb9d8b98988b98c98b9898b5cfca8b98988b99c78b9898c79bc79e9c97c9c7939ec7cc9d939a9a9ec993c79b9ec7939ec7c79b9a9d9f9bcacacc9b8b98988b9dca
+-------------------------------
+
+Log Entry : 3:31:14 PM Monday, September 13, 2021
+  :
+  :Continue.... :== 
+-------------------------------
+
+Log Entry : 3:31:14 PM Monday, September 13, 2021
+  :
+  :Continue 1.... :== 
+-------------------------------
+
+Log Entry : 3:31:14 PM Monday, September 13, 2021
+  :
+  :Continue 2.... :== 
+-------------------------------
+
+Log Entry : 3:31:14 PM Monday, September 13, 2021
+  :
+  :Short Url  :== https://webtest.tpdelhi.com/meeting/api/uri/1LUzAZ5U
+-------------------------------
+
+Log Entry : 3:31:14 PM Monday, September 13, 2021
+  :
+  :Long Url  :== https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d
+-------------------------------
+
+Log Entry : 3:31:14 PM Monday, September 13, 2021
+  :
+  :Query  :== Update Tbl_User_Master Set MeetingUrl = 'https://webtest.tpdelhi.com/meeting/api/uri/1LUzAZ5U', Original_MeetingURL = 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d'  ,  Updated_by = '91210'  Where ID = '107' and EMP_ID = '91715'
+-------------------------------
+
+Log Entry : 3:31:59 PM Monday, September 13, 2021
+  :
+  :EmployeeID  :== 9f979d979b
+-------------------------------
+
+Log Entry : 3:31:59 PM Monday, September 13, 2021
+  :
+  :Long Service  :== https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d
+-------------------------------
+
+Log Entry : 3:31:59 PM Monday, September 13, 2021
+  :
+  :Short Service  :== cedadad6d9a09595dacbc7d3d994d3cfc9d8d5d9d5ccda94c9d5d395d295d3cbcbdadbd693d0d5cfd495979f8b99c7d3cbcbdacfd4cdc5b4d0cddeb3e0bfe0bf98bbdac0bad2d0b3a99696c0d0b798b2bacd9bb3bac9dabfd3b0d3b4baaf96b4adb8cec0d3bfdf8b9a96daced8cbc7ca94dc989596a5c9d5d4dacbdedaa38b9dc88b9898bacfca8b98988b99c78b98989d9e999fcac997c7939fc99a99939ac99b98939e98999a93999b9d9899999f99c99ccb9d8b98988b98c98b9898b5cfca8b98988b99c78b9898c79bc79e9c97c9c7939ec7cc9d939a9a9ec993c79b9ec7939ec7c79b9a9d9f9bcacacc9b8b98988b9dca
+-------------------------------
+
+Log Entry : 3:31:59 PM Monday, September 13, 2021
+  :
+  :Continue.... :== 
+-------------------------------
+
+Log Entry : 3:31:59 PM Monday, September 13, 2021
+  :
+  :Continue 1.... :== 
+-------------------------------
+
+Log Entry : 3:32:00 PM Monday, September 13, 2021
+  :
+  :Continue 2.... :== 
+-------------------------------
+
+Log Entry : 3:32:00 PM Monday, September 13, 2021
+  :
+  :Short Url  :== https://webtest.tpdelhi.com/meeting/api/uri/GJjZKmYy
+-------------------------------
+
+Log Entry : 3:32:00 PM Monday, September 13, 2021
+  :
+  :Long Url  :== https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d
+-------------------------------
+
+Log Entry : 3:32:00 PM Monday, September 13, 2021
+  :
+  :Query  :== Update Tbl_User_Master Set MeetingUrl = 'https://webtest.tpdelhi.com/meeting/api/uri/GJjZKmYy', Original_MeetingURL = 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d'  ,  Updated_by = '91210'  Where ID = '107' and EMP_ID = '91715'
+-------------------------------
+
+Log Entry : 3:43:11 PM Monday, September 13, 2021
+  :
+  :EmployeeID  :== 9f979d979b
+-------------------------------
+
+Log Entry : 3:43:11 PM Monday, September 13, 2021
+  :
+  :Long Service  :== https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d
+-------------------------------
+
+Log Entry : 3:43:11 PM Monday, September 13, 2021
+  :
+  :Short Service  :== cedadad6d9a09595dacbc7d3d994d3cfc9d8d5d9d5ccda94c9d5d395d295d3cbcbdadbd693d0d5cfd495979f8b99c7d3cbcbdacfd4cdc5b4d0cddeb3e0bfe0bf98bbdac0bad2d0b3a99696c0d0b798b2bacd9bb3bac9dabfd3b0d3b4baaf96b4adb8cec0d3bfdf8b9a96daced8cbc7ca94dc989596a5c9d5d4dacbdedaa38b9dc88b9898bacfca8b98988b99c78b98989d9e999fcac997c7939fc99a99939ac99b98939e98999a93999b9d9899999f99c99ccb9d8b98988b98c98b9898b5cfca8b98988b99c78b9898c79bc79e9c97c9c7939ec7cc9d939a9a9ec993c79b9ec7939ec7c79b9a9d9f9bcacacc9b8b98988b9dca
+-------------------------------
+
+Log Entry : 3:43:11 PM Monday, September 13, 2021
+  :
+  :Continue.... :== 
+-------------------------------
+
+Log Entry : 3:43:11 PM Monday, September 13, 2021
+  :
+  :Continue 1.... :== 
+-------------------------------
+
+Log Entry : 3:43:12 PM Monday, September 13, 2021
+  :
+  :Continue 2.... :== 
+-------------------------------
+
+Log Entry : 3:43:12 PM Monday, September 13, 2021
+  :
+  :Short Url  :== https://tatapower-ddl.com/meeting/api/uri/PAWlg6RO
+-------------------------------
+
+Log Entry : 3:43:12 PM Monday, September 13, 2021
+  :
+  :Long Url  :== https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d
+-------------------------------
+
+Log Entry : 3:43:12 PM Monday, September 13, 2021
+  :
+  :Query  :== Update Tbl_User_Master Set MeetingUrl = 'https://tatapower-ddl.com/meeting/api/uri/PAWlg6RO', Original_MeetingURL = 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d'  ,  Updated_by = '91210'  Where ID = '107' and EMP_ID = '91715'
+-------------------------------
+
+Log Entry : 3:43:23 PM Monday, September 13, 2021
+  :
+  :EmployeeID  :== 9f969b9e96
+-------------------------------
+
+Log Entry : 3:43:23 PM Monday, September 13, 2021
+  :
+  :Long Service  :== https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d
+-------------------------------
+
+Log Entry : 3:43:23 PM Monday, September 13, 2021
+  :
+  :Short Service  :== cedadad6d9a09595dacbc7d3d994d3cfc9d8d5d9d5ccda94c9d5d395d295d3cbcbdadbd693d0d5cfd495979f8b99c7d3cbcbdacfd4cdc5b4d0cddeb3e0bfe0bf98bbdac0bad2d0b3a99696c0d0b798b2bacd9bb3bac9dabfd3b0d3b4baaf96b4adb8cec0d3bfdf8b9a96daced8cbc7ca94dc989596a5c9d5d4dacbdedaa38b9dc88b9898bacfca8b98988b99c78b98989d9e999fcac997c7939fc99a99939ac99b98939e98999a93999b9d9899999f99c99ccb9d8b98988b98c98b9898b5cfca8b98988b99c78b9898c79bc79e9c97c9c7939ec7cc9d939a9a9ec993c79b9ec7939ec7c79b9a9d9f9bcacacc9b8b98988b9dca
+-------------------------------
+
+Log Entry : 3:43:23 PM Monday, September 13, 2021
+  :
+  :Continue.... :== 
+-------------------------------
+
+Log Entry : 3:43:23 PM Monday, September 13, 2021
+  :
+  :Continue 1.... :== 
+-------------------------------
+
+Log Entry : 3:43:23 PM Monday, September 13, 2021
+  :
+  :Continue 2.... :== 
+-------------------------------
+
+Log Entry : 3:43:23 PM Monday, September 13, 2021
+  :
+  :Short Url  :== https://tatapower-ddl.com/meeting/api/uri/SkBF5E2e
+-------------------------------
+
+Log Entry : 3:43:24 PM Monday, September 13, 2021
+  :
+  :Long Url  :== https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d
+-------------------------------
+
+Log Entry : 3:43:24 PM Monday, September 13, 2021
+  :
+  :Query  :== Update Tbl_User_Master Set MeetingUrl = 'https://tatapower-ddl.com/meeting/api/uri/SkBF5E2e', Original_MeetingURL = 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjgxMzYzY2UtZTljMC00ZjQ2LTg5MTctYmJmNTI0NGRhZmYy%40thread.v2/0?context=%7b%22Tid%22%3a%227839dc1a-9c43-4c52-8234-35723393c6e7%22%2c%22Oid%22%3a%22a5a861ca-8af7-448c-a58a-8aa54795ddf5%22%7d'  ,  Updated_by = '91210'  Where ID = '108' and EMP_ID = '90580'
+-------------------------------
